@@ -14,3 +14,21 @@ def sorted_len_less_4(collection):
 print(sorted_len_less_4(coll1) == ["2", ":-)"])
 print(sorted_len_less_4(coll2) == ["-2"])
 print(sorted_len_less_4(coll3) == [])
+
+
+# Решение по блок-схеме
+
+def sorted(collection):
+    result = []
+    ind_coll = 0
+    end = len(collection)
+    while ind_coll < end:
+        if len(collection[ind_coll]) <= 3:
+            result.append(collection[ind_coll])
+        ind_coll += 1
+    return result
+
+
+print(sorted(coll1) == ["2", ":-)"])
+print(sorted(coll2) == ["-2"])
+print(sorted(coll3) == [])
