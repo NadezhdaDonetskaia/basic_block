@@ -32,3 +32,4 @@ def sorted(collection):
 print(sorted(coll1) == ["2", ":-)"])
 print(sorted(coll2) == ["-2"])
 print(sorted(coll3) == [])
+
